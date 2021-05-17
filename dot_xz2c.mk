@@ -7,10 +7,11 @@
 # Inherit from xz2c device
 $(call inherit-product, device/sony/xz2c/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common DotOS stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+$(call inherit-product, vendor/dot/config/common.mk)
 
-PRODUCT_NAME := lineage_xz2c
+PRODUCT_NAME := dot_xz2c
 PRODUCT_DEVICE := xz2c
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
